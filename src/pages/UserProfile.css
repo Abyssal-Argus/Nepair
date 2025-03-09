@@ -1,0 +1,158 @@
+/* UserProfile.css */
+
+.profile-container {
+  background-image: url('../assets/BG.jpg'); /* Path to your background image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 150px 0 120px 0;
+}
+
+.profile-card {
+  background: rgba(67, 67, 67, 0.9); /* Semi-transparent white background */
+  border-radius: 15px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  padding: 30px 40px;
+  max-width: 800px;
+  width: 100%;
+  text-align: left;
+  backdrop-filter: blur(10px); /* Adds a blur effect to the background */
+}
+
+.profile-card h1 {
+  font-size: 2rem;
+  color: #ffffff;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.profile-section {
+  margin-bottom: 25px;
+}
+
+.profile-section h2 {
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #2575fc;
+  padding-bottom: 5px;
+}
+
+.profile-field {
+  margin-bottom: 15px;
+}
+
+.profile-field label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+  color: #ebebeb;
+}
+
+.profile-field input,
+.profile-field select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.8);
+  transition: border-color 0.3s ease;
+}
+
+.profile-field input:focus,
+.profile-field select:focus {
+  border-color: #2575fc;
+  outline: none;
+}
+
+.profile-field span {
+  font-size: 1rem;
+  color: #fff;
+}
+
+.dynamic-field {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.dynamic-field input {
+  flex: 1;
+}
+
+.remove-btn {
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.3s ease;
+}
+
+.remove-btn:hover {
+  background: #e60000;
+}
+
+.add-btn {
+  background: #2575fc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.3s ease;
+}
+
+.add-btn:hover {
+  background: #6a11cb;
+}
+
+.profile-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.edit-btn,
+.save-btn {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.edit-btn {
+  background: #2575fc;
+  color: white;
+}
+
+.edit-btn:hover {
+  background: #6a11cb;
+}
+
+.save-btn {
+  background: #4caf50;
+  color: white;
+}
+
+.save-btn:hover {
+  background: #45a049;
+}
+
+/* Loading text styling */
+.profile-card p {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #fff;
+}

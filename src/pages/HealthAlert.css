@@ -1,0 +1,175 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f4f8;
+  color: #fff;
+}
+
+.health-alert-page {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navbar {
+  width: 100%;
+  background-color: #4caf50;
+  color: white;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.navbar h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.health-alert-container {
+  margin-top: 6rem;
+  padding: 2rem;
+  max-width: 600px;
+  width: 100%;
+  background: #2c2c2c;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 150px;
+  margin-bottom: 100px;
+}
+
+.auth-required,
+.subscription-success,
+.subscription-form {
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #864caf;
+  font-weight: bold;
+}
+
+.description {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  color: #fff;
+}
+
+.cta-button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.cta-button.secondary {
+  background-color: #f44336;
+}
+
+.cta-button:hover {
+  opacity: 0.9;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #818181;
+}
+
+.station-select {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  height: 120px;
+  background-color: #fff;
+  font-size: 1rem;
+}
+
+.disease-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: auto;
+}
+
+.disease-option input[type="checkbox"] {
+  flex-shrink: 0;
+  width: 2rem;
+}
+
+.other-input {
+  margin-left: 0.5rem;
+  padding: 0.3rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.phone-input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.agreement {
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+}
+
+.agreement input[type="checkbox"] {
+  width: 2rem;
+  flex-shrink: 0;
+}
+
+.message {
+  margin-top: 1rem;
+  padding: 0.8rem;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.message.error {
+  background-color: #ffebee;
+  color: #c62828;
+}
+
+.success-icon {
+  font-size: 2rem;
+  color: #4caf50;
+  margin-bottom: 1rem;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.success-message {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  color: #555;
+}

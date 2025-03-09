@@ -1,0 +1,40 @@
+.hero-container {
+    padding: 0;
+    margin: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.herowrapper{
+    position: absolute;
+    top:30vh;
+    width:100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    overflow-x: hidden;
+}
+.hero-container img{
+    height:70vh;
+}
+
+.hero-container p{
+    text: left !important;
+}
+
+.heading{
+    font-size: 3em;
+    color: #05023b;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    font-style: sans;
+}
+
+.herotext{
+    font-size: 1em;
+    color: #1b1b1b;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+}

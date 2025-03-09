@@ -1,0 +1,87 @@
+.navButtons {
+  padding: 10px 15px;
+  border: none;
+  background-color: transparent !important;
+  color: #FFF;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.navButtons::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px; /* Distance from text */
+  width: 0%;
+  height: 4px;
+  background-color: #B53389; /* Border color */
+  transition: width 0.3s ease-in-out;
+}
+
+.navButtons:hover::after {
+  width: 100%; /* Expands from left to right */
+}
+
+.containNav{
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100%;
+    background: transparent; /* Semi-transparent for visibility */
+    padding: 15px;
+    z-index: 1000; /* Ensures it's above everything */
+}
+
+.authButton{
+  background: black;
+  transition: color 0.3s ease; 
+  font-size: 18px;
+  
+}
+
+.authButton:hover{
+  background: #fff;
+  color: #0d1b2a;
+  box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+}
+
+.authButton:active{
+  color: #0d1b2a;
+}
+
+.authButton:focus{
+  outline: none;
+}
+
+.authButton:focus::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px; /* Distance from text */
+  width: 100%;
+  height: 4px;
+  background-color: #2575fc; /* Border color */
+  transition: width 0.3s ease-in-out;
+}
+
+.authButton.active::after{
+  width: 100%; /* Expands from left to right */
+}
+
+.authButton.active{
+  color: #0d1b2a;
+}
+
+.userInfo{
+  display:flex;
+  flex-direction: column;
+  gap:0;
+  padding-right:5px;
+}
+
+.userface{
+  font-size:32px !important;
+}
